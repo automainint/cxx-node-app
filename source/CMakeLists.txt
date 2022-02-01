@@ -5,15 +5,15 @@ set(NODEJS_FIND_PATH ${THIRDPARTY_PREFIX}/build/src/node)
 
 project(nodeapp CXX)
 
-if ("${CMAKE_STATIC_LIBRARY_PREFIX_CXX}${CMAKE_STATIC_LIBRARY_SUFFIX_CXX}" STREQUAL "")
-  if (MSVC)
+if("${CMAKE_STATIC_LIBRARY_PREFIX_CXX}${CMAKE_STATIC_LIBRARY_SUFFIX_CXX}" STREQUAL "")
+  if(MSVC)
     set(CMAKE_STATIC_LIBRARY_PREFIX_CXX "")
     set(CMAKE_STATIC_LIBRARY_SUFFIX_CXX ".lib")
-  else ()
+  else()
     set(CMAKE_STATIC_LIBRARY_PREFIX_CXX "lib")
     set(CMAKE_STATIC_LIBRARY_SUFFIX_CXX ".a")
-  endif ()
-endif ()
+  endif()
+endif()
 
 file(
   GLOB_RECURSE NODEJS_LIBS
@@ -40,8 +40,8 @@ target_include_directories(nodeapp PRIVATE ../thirdparty/include/node)
 find_package(Threads REQUIRED)
 target_link_libraries(nodeapp PRIVATE Threads::Threads)
 
-if (UNIX AND NOT APPLE)
+if(UNIX AND NOT APPLE)
   target_link_libraries(nodeapp PRIVATE -ldl)
-endif ()
+endif()
 
 target_link_libraries(nodeapp PRIVATE node-all)
