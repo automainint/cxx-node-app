@@ -1,0 +1,65 @@
+BasedOnStyle: LLVM
+UseTab: Never
+TabWidth: 2
+IndentWidth: 2
+
+Language: Cpp
+Standard: c++20
+
+ColumnLimit: 70
+MaxEmptyLinesToKeep: 1
+SpacesBeforeTrailingComments: 1
+AccessModifierOffset: -2
+PenaltyBreakAssignment: 100
+PenaltyReturnTypeOnItsOwnLine: 200
+
+IndentCaseLabels: true
+IndentExternBlock: Indent
+IndentGotoLabels: false
+IndentPPDirectives: AfterHash
+IndentRequires: true
+IndentWrappedFunctionNames: false
+NamespaceIndentation: All
+
+SpaceAfterCStyleCast: true
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: true
+SpaceInEmptyParentheses: false
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpacesInConditionalStatement: false
+SpacesInSquareBrackets: false
+
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveDeclarations: Consecutive
+AlignEscapedNewlines: Left
+AllowShortLambdasOnASingleLine: All
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AllowAllArgumentsOnNextLine: true
+AllowAllConstructorInitializersOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: true
+BinPackParameters: true
+BreakBeforeConceptDeclarations: true
+BreakConstructorInitializers: AfterColon
+Cpp11BracedListStyle: false
+EmptyLineBeforeAccessModifier: LogicalBlock
+FixNamespaceComments: false
+PointerAlignment: Right
+ReflowComments: true
+SortIncludes: CaseInsensitive
+SortUsingDeclarations: true
